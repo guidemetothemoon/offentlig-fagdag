@@ -25,12 +25,19 @@
 <body data-color-scheme="light" data-color="accent">
     <header class="fixed-width">
         <div class="off-banner" data-color-scheme="light">
-            <a href="index.html" class="off-logo">[OFF]</a>
+            <a href="index.html" class="off-logo" aria-label="OFF">
+                <svg class="off-logo-svg" viewBox="0 0 108 42" xmlns="http://www.w3.org/2000/svg">
+                    <text class="off-logo-stroke" x="54" y="32" text-anchor="middle">[OFF]</text>
+                    <text class="off-logo-fill" x="54" y="32" text-anchor="middle">[OFF]</text>
+                </svg>
+            </a>
             <span class="off-title">Offentlig fagdag</span>
         </div>
+        <button class="nav-toggle" aria-label="Meny" aria-expanded="false">&#9776;</button>
         <nav>
-            <a class="ds-button off-button" data-variant="secondary" href="about.html">Om fagdagen</a>
+            <a class="ds-button off-button" data-variant="secondary" href="program.html">Program</a>
             <a class="ds-button off-button" data-variant="secondary" href="openspace.html">Open Space</a>
+            <a class="ds-button off-button" data-variant="secondary" href="about.html">Om fagdagen</a>
         </nav>
     </header>
     <main>
@@ -61,10 +68,10 @@
                     <icon-mikrofon></icon-mikrofon>
                 </div>
                 <div class="action-description">
-                    <a class="ds-link ds-heading" data-size="md"
+                    <a class="ds-link ds-heading" data-size="sm"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSdRJRd7h4xbEpX-xh7UdE2CxdTQqnLJrOToifoSQUC_nI70bw/viewform?usp=sharing&ouid=107058326216933342350">Jeg
-                        vil holde foredrag</a>
-                    <p class="ds-paragraph">Frist for innsending av forslag er <strong>1. mars 2026.</strong></p>
+                        vil melde meg på venteliste for å holde foredrag</a>
+                    <p class="ds-paragraph" data-size="sm">Programmet er satt, men du kan melde interesse for neste gang.</p>
                 </div>
             </div>
         </div>
@@ -86,7 +93,8 @@
                 <section class="info-section">
                     <div class="info-section-text">
                         <h2 class="ds-heading" data-size="lg">Program</h2>
-                        <p class="ds-paragraph" data-size="lg">Her kommer programmet for dagen så snart vi har det klart.</p>
+                        <p class="ds-paragraph" data-size="lg">Programmet for dagen er klart! Vi har over 30 foredrag og lyntaler innen sikkerhet, frontend, plattform, metode og meir.</p>
+                        <a class="ds-button off-button" data-variant="secondary" href="program.html" style="width: fit-content;">Se fullt program</a>
                     </div>
                     <icon-manserpaakart></icon-manserpaakart>
                 </section>

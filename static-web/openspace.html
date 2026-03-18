@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/@digdir/designsystemet-css@1.11.0/dist/src/index.css"
         integrity="sha384-iQVX/eRD/62k5h5Q6ZYkiN2gavfLDZJUu5EudKV0DcTIKhkXbfWUgbas+JkoxIAg" crossorigin="anonymous">
     <script src="svg-components.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Open Space – Offentlig fagdag 2026</title>
     <meta property="og:title" content="Open Space – Offentlig fagdag 2026">
@@ -24,12 +25,19 @@
 <body data-color-scheme="light" data-color="accent">
     <header class="fixed-width">
         <div class="off-banner" data-color-scheme="light">
-            <a href="index.html" class="off-logo">[OFF]</a>
+            <a href="index.html" class="off-logo" aria-label="OFF">
+                <svg class="off-logo-svg" viewBox="0 0 108 42" xmlns="http://www.w3.org/2000/svg">
+                    <text class="off-logo-stroke" x="54" y="32" text-anchor="middle">[OFF]</text>
+                    <text class="off-logo-fill" x="54" y="32" text-anchor="middle">[OFF]</text>
+                </svg>
+            </a>
             <span class="off-title">Offentlig fagdag</span>
         </div>
+        <button class="nav-toggle" aria-label="Meny" aria-expanded="false">&#9776;</button>
         <nav>
-            <a class="ds-button off-button" data-variant="secondary" href="about.html">Om fagdagen</a>
+            <a class="ds-button off-button" data-variant="secondary" href="program.html">Program</a>
             <a class="ds-button off-button" data-variant="secondary" href="openspace.html">Open Space</a>
+            <a class="ds-button off-button" data-variant="secondary" href="about.html">Om fagdagen</a>
         </nav>
     </header>
     <main class="program-page openspace-page">
@@ -221,6 +229,7 @@
 
         fetchTopics();
     </script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>

@@ -507,3 +507,60 @@ nav {
 		max-width: 1320px;
 	}
 }
+
+/* Open Space floating faces cloud */
+.openspace-cloud {
+	position: relative;
+	width: 22em;
+	height: 22em;
+	flex-shrink: 0;
+}
+
+.openspace-cloud-center {
+	position: absolute;
+	width: 13em;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	box-shadow: none;
+	max-height: none;
+}
+
+.openspace-cloud-face {
+	position: absolute;
+	width: 7.5em;
+	height: auto;
+	box-shadow: none;
+	max-height: none;
+}
+
+.face-1 {
+	top: -5%;
+	right: -5%;
+}
+
+.face-2 {
+	bottom: -5%;
+	left: -5%;
+}
+
+.face-3 {
+	bottom: 0%;
+	right: -10%;
+}
+
+@media (max-width: 575px) {
+	.openspace-cloud {
+		width: 12em;
+		height: 12em;
+	}
+
+	.openspace-cloud-center {
+		width: 7em;
+	}
+
+	.openspace-cloud-face {
+		width: 4em;
+	}
+}

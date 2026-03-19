@@ -267,6 +267,7 @@ header .off-logo {
 }
 
 @media (prefers-color-scheme: dark) {
+
 	.action-card,
 	.schedule-talk {
 		box-shadow: none;
@@ -463,7 +464,7 @@ header .off-logo {
 	padding-block: 0 !important;
 }
 
-.program-tabs [role="tabpanel"] > div {
+.program-tabs [role="tabpanel"]>div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -484,6 +485,8 @@ header .off-logo {
 }
 
 .program-tablist [role="tab"] {
+	--dsc-tabs-tab-color--selected: transparent;
+
 	padding: var(--ds-size-3) var(--ds-size-5);
 	font-family: var(--ds-font-family), monospace;
 	font-size: var(--ds-font-size-1);

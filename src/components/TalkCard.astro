@@ -8,6 +8,14 @@ interface Props {
 }
 
 const { org, title, speaker, description, track } = Astro.props;
+
+// Split description into paragraphs by blank lines.
+const paragraphs = description
+  ? description
+      .split(/\n\s*\n/)
+      .map(p => p.trim())
+      .filter(Boolean)
+  : [];
 ---
 
 <div class="schedule-talk">
@@ -15,5 +23,9 @@ const { org, title, speaker, description, track } = Astro.props;
   {track && <span class="schedule-track">{track}</span>}
   <h3 class="ds-heading" data-size="sm">{title}</h3>
   {speaker && <span class="ds-paragraph schedule-speaker" data-size="sm">{speaker}</span>}
-  {description && <p class="ds-paragraph" data-size="sm" set:html={description} />}
+  {paragraphs.length > 0 && (
+    <div class="schedule-description">
+      {paragraphs.map(p => <p class="ds-paragraph" data-size="sm" set:html={p} />)}
+    </div>
+  )}
 </div>

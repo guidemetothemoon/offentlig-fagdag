@@ -458,6 +458,16 @@ header .off-logo {
 	font-size: var(--ds-font-size-2);
 }
 
+.schedule-description {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ds-size-3);
+}
+
+.schedule-description p {
+	margin: 0;
+}
+
 .program-tabs {
 	width: 100%;
 	display: block !important;

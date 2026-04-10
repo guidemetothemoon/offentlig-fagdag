@@ -77,7 +77,7 @@ customElements.define(
 	"icon-man7",
 	class Man7Icon extends SvgIcon {
 		connectedCallback() {
-			this.loadSvg("/offentlig-fagdag/img/man7.svg");
+			this.loadSvg("/img/man7.svg");
 		}
 	},
 );
@@ -85,7 +85,7 @@ customElements.define(
 	"icon-manserpaakart",
 	class ManSerpaaKartIcon extends SvgIcon {
 		connectedCallback() {
-			this.loadSvg("/offentlig-fagdag/img/mannserpåkart.svg");
+			this.loadSvg("/img/mannserpåkart.svg");
 		}
 	},
 );
@@ -93,7 +93,7 @@ customElements.define(
 	"icon-kaffekopp",
 	class KaffekoppIcon extends SvgIcon {
 		connectedCallback() {
-			this.loadSvg("/offentlig-fagdag/img/kaffekopp 1.svg");
+			this.loadSvg("/img/kaffekopp 1.svg");
 		}
 	},
 );
@@ -101,7 +101,7 @@ customElements.define(
 	"icon-kaffekoppenkel",
 	class KaffekoppEnkelIcon extends SvgIcon {
 		connectedCallback() {
-			this.loadSvg("/offentlig-fagdag/img/Kaffekoppenkel.svg");
+			this.loadSvg("/img/Kaffekoppenkel.svg");
 		}
 	},
 );
@@ -117,7 +117,7 @@ customElements.define(
 	"icon-kattekopp",
 	class KattekoppIcon extends SvgIcon {
 		connectedCallback() {
-			this.loadSvg("/offentlig-fagdag/img/kattekopp.svg");
+			this.loadSvg("/img/kattekopp.svg");
 		}
 	},
 );
@@ -125,7 +125,7 @@ customElements.define(
 	"icon-pc",
 	class PCIcon extends SvgIcon {
 		connectedCallback() {
-			this.loadSvg("/offentlig-fagdag/img/PC.svg");
+			this.loadSvg("/img/PC.svg");
 		}
 	},
 );
@@ -133,7 +133,7 @@ customElements.define(
 	"icon-mikrofon",
 	class MikrofonIcon extends SvgIcon {
 		connectedCallback() {
-			this.loadSvg("/offentlig-fagdag/img/Mikrofon.svg");
+			this.loadSvg("/img/Mikrofon.svg");
 		}
 	},
 );
@@ -141,7 +141,7 @@ customElements.define(
 	"icon-katteskjerm",
 	class KatteskjermIcon extends SvgIcon {
 		connectedCallback() {
-			this.loadSvg("/offentlig-fagdag/img/Katteskjerm.svg");
+			this.loadSvg("/img/Katteskjerm.svg");
 		}
 	},
 );

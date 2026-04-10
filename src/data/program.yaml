@@ -1,0 +1,474 @@
+commonBefore:
+- time: 08:30
+  event: Registrering og kaffe
+rooms:
+- name: Hovedrommet, Meet salen
+  subtitle: Utvikling
+  id: hovedrommet
+  schedule:
+  - time: 09:00–09:10
+    duration: 10 min
+    talks:
+    - org: Offentlig Fagdag
+      title: Velkomsttale
+      speaker: Arrangørene av Offentlig Fagdag
+      description: Arrangørene ønsker velkommen til fagdagen og gir en kort introduksjon til dagens program.
+  - time: 09:10
+    event: Pause
+  - time: 09:20–09:50
+    duration: 30 min
+    talks:
+    - org: NAV
+      title: Hvordan Nix & Rust forenkler (F)OSS adopsjon!
+      speaker: Christian Chavez
+      description: |-
+        Jeg vil fortelle om hvilke fordeler jeg opplevde når jeg forsøkte å adoptere opensource prosjekter vha. styrkene til Rust kombinert med Nix!
+
+        Rust gir feks:
+        - kompilatorgarantier (kompilerer det er businesslogikkimplementasjon garantert å fungere)
+        - ytelse
+
+        Nix gir feks:
+        - reproduserbar utviklings-miljø
+        - SBOM kontroll på tvers av software-økosystemer
+
+        Sammen gir disse to meg ganske stor trygghet mtp:
+        - bruk av LLM til koding - kompilerer det/passerer det tester, funker det
+        - stålkontroll på hva som dras inn i bygg, og hva som spyttes ut i andre enden
+        - portabelt mellom andre x86-64_linux systemer! (lokal laptop, github actions CI/CD, k8s containers)
+  - time: 09:50
+    event: Pause
+  - time: 10:00–10:30
+    duration: 30 min
+    talks:
+    - org: Digdir
+      title: Designsystem i ren CSS – er det mulig?? Og, hvorfor er det fett for meg?
+      speaker: Eirik Backer og Tobias Barsnes
+      description: |-
+        Digdir lanserte sist år «Designsystemet» – en verktøykasse for å enkelt lage digitale tjenester eller bygge nye designsystem med egen identitet. Fint og flott! Men, hvilke rammeverk skal vi støtte? Er ren HTML, CSS og JS nok? Og hva betyr det for deg? Teaser: WebComponents er ikke alltid svaret.
+  - time: '10:30'
+    event: Pause
+  - time: 10:40–11:10
+    duration: 30 min
+    talks:
+    - org: Politiet
+      title: Koding og brukeropplevelse i AI-eraen
+      speaker: Kjetil Hårtveit
+      description: |-
+        AI revolusjonerer måten vi skriver kode og bygger løsninger på – vi får mer gjort, raskere enn noen gang. Men AI er i bunn og grunn en avansert auto-complete som gjetter seg til neste ord; den bruker ikke applikasjonen din som et menneske. Den kjenner ikke hvordan det føles å klikke seg gjennom et skjema, navigere en meny eller tolke en fargepalett. Noen hevder frontend er det første AI kan erstatte, men jeg mener det motsatte: nettopp fordi brukeropplevelse handler om menneskelig opplevelse, er det noe av det siste vi bør overlate helt til maskiner. Alt som er relatert til mennesker bør involvere mennesker.
+
+        I dette innlegget deler jeg erfaringer fra egen hverdag der mesteparten av koden nå genereres av AI, og diskuterer balansen mellom produktivitet og kvalitet. «With great power comes great responsibility» – vi står fortsatt ansvarlige for det vi lager, enten koden er håndskrevet eller generert. Jeg ser på hva AI er fantastisk til (idémyldring, kodegenerering, sparring), og hvor mennesket fortsatt er uunnværlig: å sikre at løsningene er behagelige, tilgjengelige og fungerer for ekte brukere med ulik bakgrunn, kontekst og behov. Bruk AI for alt det er verdt, men ikke glem å faktisk teste hvordan løsningen oppleves – de grunnleggende prinsippene for god brukeropplevelse gjelder fortsatt.
+  - time: '11:10'
+    event: Pause
+  - time: 11:20–11:50
+    duration: 30 min
+    talks:
+    - org: Enova
+      title: Designsystem-team of one!
+      speaker: Lene Ludvigsen
+      description: |-
+        Hvordan starter man et designsystem når man har veldig begrenset med tid og ressurser? Lene forteller om hvordan hun har gjort det i Enova, der hun som eneste designer har ansvaret for alt som har med design og UX å gjøre, PLUSS det å lage et designsystem. Er det mulig? Come find out!
+  - time: '11:50'
+    event: Lunsj
+  - time: 13:00–13:30
+    duration: 30 min
+    talks:
+    - org: NRK
+      title: Når koden ikke funker for deg
+      speaker: Helén Persson
+      description: "Legacy kode? Nei takk, det vil jeg ikke jobbe med. \n\nLegacy kode oppstår sjelden fordi vi er dårlige utviklere. Den oppstår fordi vi leverer, og systemet vokser og utvikler seg. Små MVP'er blir produksjonssystemer. Midlertidige løsninger blir permanente. Og plutselig sitter vi med kode ingen tør eller vil røre.\n\nSå hva gjør man når koden man sitter med ikke lengre fungerer for teamet? \n\nVi moderniserer et sentralt back-office system som leverer data til NRK Radio appen. Systemet er ikke synlig for brukerne, men konsekvensene merkes umiddelbart hvis det feiler.\n\nI dette foredraget deler jeg hvordan vi vurderte full rewrite vs. videreutvikling, hvilke kriterier som faktisk avgjorde valget, og hvordan vi moderniserer uten en risikabel big bang-release."
+  - time: '13:30'
+    event: Pause
+  - time: 13:40–14:10
+    duration: 30 min
+    talks:
+    - org: NAV
+      title: Hvordan logger kan felle en Nav-direktør
+      speaker: Trond Arve Wasskog og Audun Fauchald Strand
+      description: |-
+        Hans Christian Holte gikk av som NAV-direktør i 11. november 2025. Bakgrunnen var kritikk fra Riksrevisjonen, blant annet for manglende audit-logging. I denne presentasjonen går vi gjennom hvordan dette henger sammen sett fra teknisk perspektiv, hvilke tiltak som har blitt gjort, og hvordan vi ser for oss å forbedre internkontrollen framover.
+  - time: '14:10'
+    event: Pause
+  - time: 14:20–14:50
+    duration: 30 min
+    talks:
+    - org: Oslo kommune
+      title: Infrastruktur med UX på laget
+      speaker: Håvard Eide
+      description: |-
+        Kva skjer når ein UX-designer tek plass i plattformteamet og blir med å forme infrastrukturen?
+
+        I ein organisasjon der kvart team eig sin eigen infrastruktur har vi gitt fridom for produktutvikling i AWS.. Gjennom brukartesting, observasjon og klarspråk byggjer vi plattform som passar utviklarane og produkta – ikkje motsett.
+
+        Vi jobbar for å senke den kognitive lasten, så utviklarane kan fokusere tida si på produkt. Terraform-modulane våre skal ikkje berre vere riktige – dei skal vere forståelege. Dokumentasjonen skal ikkje berre forklare, men vise veg.
+
+        Korleis kombinere kode og kommunikasjon, sikkerheit og smidighet, fridom og ansvar. Om å ta brukaroppleving på alvor – når brukaren er utviklar og verktøyet er Terraform.
+
+        ===
+        Dette er ei vidareføring av foredrag som vi hold på javazone 2025: https://2025.javazone.no/en/program/d92b3ab6-9501-4136-a818-0380760f9cdf
+  - time: '14:50'
+    event: Pause
+  - time: 15:00–15:30
+    duration: 30 min
+    talks:
+    - org: JPro/Ruter
+      title: Arkitekturen som gjorde React gøy igjen hos Tet/Ruter
+      speaker: Jan Greger Hemb
+      description: |-
+        Hos Tet/Ruter gjorde vi React gøy igjen! Ikke noe mer overkomplisert arkitektur, eller RSC og Redux, bare et jordnært fokus som prioriterer hastighet. Jeg deler våre erfaringer og gir deg en ny beste praksis for 2026: Fra mappestruktur og pakkevalg, til smart strukturering av state.
+  - time: '15:30'
+    event: Pause
+  - time: 15:50–16:20
+    duration: 30 min
+    talks:
+    - org: Skatteetaten
+      title: Når Microsoft flytter veggene i huset du nettopp bygde
+      speaker: Tor Ivar Asbølmo og Geir Tore Johansen
+      description: |-
+        Hvordan bygger man en sikker, skalerbar KI-plattform for en hel organisasjon — og hva skjer når plattformen endrer seg under føttene dine?
+
+        I denne presentasjonen deler vi erfaringene fra reisen med å tilby interne KI-endepunkter som en tjeneste — fra de første Azure OpenAI-instansene bak API Management, til overgangen mot Microsoft Foundry. Vi ser på de reelle utfordringene: nettverkssikkerhet, identitetsstyring, kostnadsovervåking og policy-håndtering i praksis. Og vi tar opp hva som skjer når tjenestene du har bygget infrastruktur rundt plutselig får nye navn, nye mønstre og nye forutsetninger.
+
+        Kort sagt: Lærdom fra skyttergravene for deg som skal levere KI-kapasitet til utviklere — uten å gi slipp på sikkerhet og kontroll.
+  - time: '16:20'
+    event: Pause
+  - time: 16:30–17:00
+    duration: 30 min
+    talks:
+    - org: SSB
+      title: Det er Nais å være utvikler i SSB
+      speaker: John Kasper Svergja
+      description: |-
+        SSB har tatt i bruk Nais som applikasjonsplattform for våre utviklere. I dette foredraget deler vi erfaringer fra migreringen og oppsummerer lærdommer etter produksjonssetting.
+- name: Rom 2, M4
+  subtitle: Plattform & Sikkerhet
+  id: rom2
+  schedule:
+  - time: 09:00–09:10
+    duration: 10 min
+    talks:
+    - org: Offentlig Fagdag
+      title: Velkomsttale i Meet-salen
+      speaker: Arrangørene av Offentlig Fagdag
+      description: Arrangørene ønsker velkommen til fagdagen og gir en kort introduksjon til dagens program.
+  - time: 09:10
+    event: Pause
+  - time: 09:20–09:50
+    duration: 30 min
+    talks:
+    - org: Skatteetaten
+      title: Gjenoppretting av data etter katastrofale hendelser
+      speaker: Leila Langø og Ole Dag Svebak
+      description: |-
+        Leila Langø, Gjenopprettingsleder i Skatteetaten, og Ole Dag Svebak, fagansvarlig for Gjenoppretting og IKT beredskap i Skatteetaten, forteller om hvorfor gjenoppretting er kritisk for å oppfylle samfunnsoppdraget når, - ikke hvis, katastrofen inntreffer. Du får en introduksjon til hva gjenoppretting er og hvordan vi jobber for å forbedre gjenopprettingsevnen i Skatteetaten.
+  - time: 09:50
+    event: Pause
+  - time: 10:00–10:30
+    duration: 30 min
+    talks:
+    - org: NRK
+      title: Leveransekjedesikkerhet for frontendere
+      speaker: Knut Haugen
+      description: |-
+        Leveransekjedesikkerhet kom for alvor på agendaen med Shai-hulud 1.0 og 2.0, og det var jo heller ikke første gang. Økosystemet rundt node.js og javascript er kanskje særlig utsatt. Hvordan kan vi ta enkle grep i vårt eget oppsett i byggepipelines og pakkehåndterere for å motvirke dette?
+  - time: '10:30'
+    event: Pause
+  - time: 10:40–11:10
+    duration: 30 min
+    talks:
+    - org: Digdir
+      title: eIDAS2 og vegen mot eit europeisk økosystem for digitale identitetslommebøker
+      speaker: Aamund Bremer
+      description: |-
+        Med eIDAS2-forordninga blir det lagt til rette for etableringa av eit felles europeisk økosystem for digitale identitetslommebøker – EU Digital Identity Wallet. Dette representerer eit viktig steg frå nasjonale eID-løysingar til eit samanhengande, grensekryssande system for identitet, legitimasjon og deling av verifiserte opplysningar i heile Europa.
+
+        I dette føredraget får du ei innføring i kva digitale identitetslommebøker er, korleis dei fungerer, og kva dei kan brukast til – frå trygg innlogging og elektronisk signering til deling av digitale bevis som førarkort, vitnemål og verksemdsattestar. Vi ser på korleis lommebøkene gir brukaren større kontroll over eigne data gjennom selektiv deling og nye tillitsmodellar.
+
+        Deretter tek vi ein kikk på eIDAS2 og rammeverket for EU Digital Identity Wallet-økosystemet: krav til medlemslanda, rolla til offentlege og private aktørar, deira samvirke og tillitsinfrastruktur. Kva betyr dette i praksis for verksemder, teknologileverandørar og offentleg sektor?
+
+        Til slutt oppdaterer vi på status i Noreg: nasjonal sandkasse, pilotering og førebuingar til integrasjon mot europeisk infrastruktur. Kva bør du som utviklar eller løysingsarkitekt førebu deg på no?
+  - time: '11:10'
+    event: Pause
+  - time: 11:20–11:50
+    duration: 30 min
+    talks:
+    - org: Norsk helsenett
+      title: La oss bygge et datasenter
+      speaker: Håvard Elnan
+      description: |-
+        Jeg tar med noe hardware så setter vi opp en infrastrukturplattform fra bunnen. Vi viser hvordan Norsk helsenett tenker på autonome datasenter, definert av software og automatisert.
+  - time: '11:50'
+    event: Lunsj
+  - time: 13:00–13:30
+    duration: 30 min
+    talks:
+    - org: Oslo kommune
+      title: Trusselmodellering
+      speaker: Report from the trenches - Rune Schumann, Digitaliseringsetaten
+      description: |-
+        Trusselmodellering er en svært nyttig øvelse og gir god innsikt i tekniske sårbarheter i applikasjoner og verdikjeder. Jeg har lang erfaring som senior sikkerhetsrådgiver å gjennomføre trusselmodelleringer på godt og vondt.
+        Trusselmodellering gjennomføres ofte på en måte som ikke øker selvtilliten til deltagerne. Noe av årsaken er at man blir snødd ned av kompleksitet og en grenseløs mengde gjøremål. Man mister selve rosinen i pølsa: avdekke de største sårbarhetene og til å kunne prioritere dem etter et kost-nytte prinsipp
+        Foredraget har en introduksjon til trusselmodellering med et enkelt eksempel. Jeg deler også mine erfaringer med trusselmodellering. De dårlige fra et stort selskap hvis-navn-ikke-nevnes, og de gode, nybakte vi nå bruker i Oslo kommune.
+        Jeg vil også reflektere over hvordan trusselmodellering kan tas aktivt i bruk fra et endringsledelsesperspektiv (ADKAR): forstå hvorfor dette er nødvendig, ha vilje og motivasjon til å delta, vite hvordan og hva som skal til for endres, å kunne gjennomføre endringen i praksis, og ikke minst: sørge for at trusselmodellering er aktivitet som gjennomføres jevnlig.
+  - time: '13:30'
+    event: Pause
+  - time: 13:40–14:10
+    duration: 30 min
+    talks:
+    - org: FFI
+      title: Så enkelt er det å bli kvantesikker
+      speaker: Martin Strand
+      description: |-
+        NSM har for lengst utgitt en veileder for å migrere til kvantesikker kryptografi, og løsningene er i stor grad klare. Mye av migreringen går nesten av seg selv -- rundt 60 % av internettrafikken er allerede kvantesikker -- og noe krever aktiv innsats.
+
+        Jeg vil forsøke å vise at det for det meste kan gjøres veldig enkelt og billig, og deretter utruste forsamlingen med litt argumenter de kan bruke når sjefen har fått et dyrt og vanskelig tilbud fra noen som vil selge løsninger basert på kvantefysikk.
+  - time: '14:10'
+    event: Pause
+  - time: 14:20–14:50
+    duration: 30 min
+    talks:
+    - org: MET
+      title: Gitlab-runner med KubeVirt
+      speaker: Christian Skarby
+      description: Praktisk demo med oppsett av kubevirt og gitlab-runner for å kjøre CI/CD i bruk-og-kast-VMer.
+  - time: '14:50'
+    event: Pause
+  - time: 15:00–15:30
+    duration: 30 min
+    talks:
+    - org: Digdir
+      title: Understanding APT defence thru Experts Eyes
+      speaker: A critical exploration of Perceived Needs and Gaps - Raymond Andre Hagen
+      description: |-
+        Gjennom forskning på forsvar mot avanserte trusselaktører har jeg publisert en del funn på gapet mellom hva som eksperter trur de har behov for , og hva som de burde fokusert på. Del av offentlig PHD arbeid ved NTNU , og mitt arbeid som fagdirektør i Cybersikkerhet ved Digitaliseringsdirektoratet.
+  - time: '15:30'
+    event: Pause
+  - time: 15:50–16:00
+    duration: 10 min
+    talks:
+    - org: Oslo kommune
+      track: Lyntale
+      title: Sikkerhet startar med klarspråk
+      speaker: Håvard Eide
+      description: |-
+        Språk er ein fundamental del av korleis vi kommuniserar og tolkar når vi utviklar programvare: korleis formar det hensikt, antagelsar, risiko og sikkerhets implikasjonar?
+
+        Ein kikk på korleis vi som utviklarar bør bruke klarspråk for å kommunisere gjennom utviklings-syklusen: fra kravspesifikasjon til produksjon og når ting går galt. Korleis vi brukar språk kan forme konsekvensane av kva som skjer når ting ikkje skjer etter planen.
+  - time: 16:00–16:10
+    duration: 10 min
+    talks:
+    - org: Politiet
+      track: Lyntale
+      title: Oops, sletta 75TB med prod-data. Hva nå?
+      speaker: Christian Tryti
+      description: |-
+        Først vise hvor enkelt det er å slette 75TB fra en S3-bucket, så hvordan det ble håndtert i form av varsling til brukere og Post-Incident-Review (aka Post mortem, men det får ikke vi i Politiet lov til å kalle det)
+  - time: 16:10–16:20
+    duration: 10 min
+    talks:
+    - org: NAV
+      track: Lyntale
+      title: AppSec i Nav med TPT
+      speaker: Emil Albrektsson
+      description: |-
+        Prioritering av sårbarheter er vanskelig og det er ikke uvanlig att utviklere ender opp med "alert fatigue". I Nav prøver vi å løse dette med TittPåTing, et egenutviklet verktøy som hjelper utviklere å prioritere hvilke sårbarheter som bør oppdateres først.
+
+        Open-source, selv-følgelig!
+  - time: '16:20'
+    event: Pause
+  - time: 16:30–17:00
+    duration: 30 min
+    talks:
+    - org: NAV
+      title: 'Magic: The Gathering er turingkomplett'
+      speaker: Andreas Nordahl
+      description: |-
+        Jeg forklarer (1) hva MTG er, (2) hva det vil si å være turingkomplett, og til slutt (3) hvordan MTG kan sies å være turingkomplett. Del tre tar definitivt lengst tid. Jeg har holdt foredraget tre ganger før, og det blir alltid god stemning. Her er slidene jeg brukte sist: https://docs.google.com/presentation/d/1gsfG_EiSK4WJF106i_xzP9URoW1Oq41OO0sevzvHTx4/edit?usp=sharing
+- name: Rom 3, M5
+  subtitle: Metode, Produkt & Data
+  id: rom3
+  schedule:
+  - time: 09:00–09:10
+    duration: 10 min
+    talks:
+    - org: Offentlig Fagdag
+      title: Velkomsttale i Meet-salen
+      speaker: Arrangørene av Offentlig Fagdag
+      description: Arrangørene ønsker velkommen til fagdagen og gir en kort introduksjon til dagens program.
+  - time: 09:10
+    event: Pause
+  - time: 09:20–09:50
+    duration: 30 min
+    talks:
+    - org: Politiet
+      title: Produktmodne team bygges
+      speaker: de oppstår ikke av seg selv - Gunn-Elin Åsgren og Ove Dalen
+      description: |-
+        Fra ambisjon til praksis: En modningsreise for produktteam.
+        De fleste team i offentlig sektor ønsker å jobbe mer produktorientert. Færre vet hva det faktisk krever i hverdagen. I dette foredraget viser vi hvordan vårt eget produkt Teamskolen og vårt egenutviklede verktøy "Teamsirkelen" hjelper team å forstå hvor de er, hva som holder dem igjen – og hvordan de kan ta neste steg i sin produktmodning. Dette gjør vi som ledd i en større strategi og å jobbe med å produktrette hele vår organisasjon, for å møte de store utfordringene Politiet står ovenfor. Vi må både få fart på teknologien vår, samtidig som alle vi som jobber der, må bli enda bedre til å lære sammen og omsette læring til verdi raskt.
+        I foredraget vil fag- og personalleder for design Ove Dalen og produktprinsipal Gunn-Elin Åsgren gi dere få innsyn et verktøy vi har utviklet, erfaringene så langt fra ca 50 team, fallgruver og hypoteser om veien videre for oss.
+  - time: 09:50
+    event: Pause
+  - time: 10:00–10:30
+    duration: 30 min
+    talks:
+    - org: Digdir
+      title: Fra applikasjonssentrisk til datasentrisk tjenesteutvikling – revolusjon eller evolusjon?
+      speaker: Erik Hagen
+      description: "Offentlig sektor har i flere tiår anskaffet applikasjoner og fagsystemer på leverandørenes premisser. Informasjonsmodeller og data har fulgt systemene – ikke omvendt. Resultatet er et fragmentert systemlandskap med innelåste data, begrenset gjenbruk, kostnadskrevende integrasjon og manglende evne til å skape sammenhengende tjenester på tvers. \n \nProsjektet Sammenhengende tjenester for barn og unge (SAMT-BU) tar utgangspunkt i at dette ikke lenger er bærekraftig. Ambisjonen er å drive fram et nødvendig systemskifte mot datasentrisk tjenesteutvikling, med pilotering innenfor barn og unge. Felles informasjonsmodeller og standardiserte grensesnitt etableres som grunnmur for samhandling og sammenhengende tjenester med brukeren i sentrum. \n \nEt slikt skifte forutsetter endringer i hvordan vi kravstiller, bestiller og utvikler IT-løsninger. Dette er et komplekst og langsiktig arbeid som krever bred teknologisk og arkitekturfaglig medvirkning. SAMT-BU-prosjektet er i oppstart. Vi har ikke alle svarene, og må arbeide smidig og lærende. I foredraget forteller vi hvor vi er - og hvordan vi ser for oss at vi kan ta det videre i fellesskap."
+  - time: '10:30'
+    event: Pause
+  - time: 10:40–11:10
+    duration: 30 min
+    talks:
+    - org: SPK
+      title: Fra Start-Up til Stat-Up – innovasjon fra innsiden av staten
+      speaker: Jørgen Ekvoll
+      description: |-
+        Etter ti år som gründer tok jeg steget rett inn i staten i 2022 – som teamleder for et produktteam i Statens pensjonskasse (SPK). Overgangen var større enn jeg hadde sett for meg. Ikke bare kulturelt, men også metodisk.
+
+        I dette foredraget deler jeg konkrete erfaringer fra å ta med start-up-tankesett inn i offentlig sektor:
+
+        Hva fungerer faktisk når man skal bygge høyleveranse-team i staten?
+
+        Hvordan jobber man med innovasjon fra innsiden av en stor organisasjon?
+
+        Hva kan offentlig sektor lære av gründere – og hva bør man ikke kopiere ukritisk?
+
+        Med praktiske eksempler viser jeg hvordan vi har jobbet med produktutvikling, teamstruktur og eierskap for å skape fart og kvalitet – uten å falle i klassiske “smidig-feller”.
+
+        Jeg har tidligere holdt foredrag for blant annet Cisco (2025), hvor jeg presenterte en “anti-scrum”-tilnærming til produktutvikling i norsk kontekst. Dette foredraget bygger videre på de samme prinsippene, tilpasset virkeligheten i offentlig sektor.
+
+        Målet er å gi deltakerne konkrete perspektiver de kan ta med seg tilbake til egne team – enten de jobber med digitalisering, tjenesteutvikling eller organisasjonsendring.
+  - time: '11:10'
+    event: Pause
+  - time: 11:20–11:50
+    duration: 30 min
+    talks:
+    - org: Politiet
+      title: Ingen pauseknapp i politiet. Slik erstattet vi en kritisk løsning uten å miste kontrollen
+      speaker: Kim Olsen Vindsland
+      description: |-
+        Politiet planlegger hver dag beredskap med mennesker, kjøretøy, hunder helikoptre, utstyr og kompetanse som må være sikkert,  raskt og presist.Likevel måtte vi bytte fundamentet for planleggingen, midt i kjernen av politinorges beredsskapssentrum, hos patruljene og i operasjonsentralen.
+
+        Hva kreves det av teamet, poltitets brukere og meg som produktleder, når både måloppnåelse, brukernes arbeidshverdag og samfunnsoppdraget står på spill? Og hva betyr det for oss som borgere at politiet kan jobbe med teknologiutvikling på denne måten?
+
+        Tre faktorer gjorde det mulig:Tillit. Mot. Og fart.
+  - time: '11:50'
+    event: Lunsj
+  - time: 13:00–13:30
+    duration: 30 min
+    talks:
+    - org: Skatteetaten
+      title: Tenor testdatasøk
+      speaker: Margrethe Bedregal og Linda Granstad
+      description: "Tenor testdatasøk er et arbeidsverktøy for alle som driver systemutvikling og som trenger testdata. Løsningen gir deg enkel tilgang til syntetiske testdata fra Test-Norge, med testdata fra flere ulike kilder. Tenor ble som idé født i det som den gang het Tverretatlig samarbeid (nå Test-Norge samarbeidet). Tanken var å gjøre det enklere å utveksle syntetiske testdata på tvers i det offentlige. Allerede som ettåring vant løsningen en pris fra Datatilsynet for innebygd personvern. \n\nVi gir deg en innføring i hva Tenor testdatasøk er, hva tanken bak har vært, hva du kan bruke den til, og ikke minst får du vite hvordan et samarbeid i det offentlige kan være en solskinnshistorie som gir fantastiske resultater! \n\nhttps://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2022/pris-til-test-norge-og-tenor-testdatasok/\n\nhttps://www.skatteetaten.no/testdata/"
+  - time: '13:30'
+    event: Pause
+  - time: 13:40–14:10
+    duration: 30 min
+    talks:
+    - org: Oslo kommune
+      title: Tverrfaglig innsikt i produktutvikling fra start til slutt
+      speaker: Stian Carstens Bendiksen
+      description: |-
+        Fra oppvekstområdet i Digitaliseringsetaten deler vi hvordan vi jobber med tverrfaglig innsiktsarbeid når problemstillingen går på tvers av tjenester, og mange har en mening om både årsak og løsning. Foredraget tar deltakerne med inn i et konkret innsiktsløp fra oppvekstdomenet i Oslo kommune. Målet er ikke “mer kunnskap”, men en tydelig avgrensing: Hvor kan digitale løsninger raskt gi mer verdi for ansatte som har behov for å dele informasjon om sårbare barn og unge i de skolenære tjenestene? (For eksempel skolehelsetjenesten og PPT)
+
+        Vi viser hvordan vi jobber tverrfaglig helt fra start for å unngå både analysefella og byggefella. Det betyr at vi kombinerer:
+
+        ... Kvantitativ innsikt for å forstå målgruppe og omfang
+
+        ... Kvalitativ innsikt for å finne ut hvor samhandlingsutfordringene og brukerbehovene faktisk ligger
+
+        ... Rammeinnsikt (juridisk handlingsrom i dette caset) for å vite hva vi må forholde oss til eller hva som må endres for å skape verdi
+
+        Formålet er å bygge et forretningscase som både gir høy verdi til ansatte og innbyggere, og som faktisk lar seg gjennomføre.
+
+        Foredraget passer for alle som jobber med produktutvikling, enten det er teknologer, produktledere, tjenestedesignere, tek-jurister eller andre interesserte.
+  - time: '14:10'
+    event: Pause
+  - time: 14:20–14:50
+    duration: 30 min
+    talks:
+    - org: Digdir
+      title: R.I.P. Scrum
+      speaker: Hello Radical Focus - Nina Kylstad og Ronny Birkeli
+      description: |-
+        Flere stjerner og planeter stod i samme bane, og etter 20 år med Scrum/Kanban og ca. 470 to ukers sprinter følte vi at det var på tide å gjøre noe med ting som funket sånn passe. Team Altinn Studio fra Digdir deler sine første erfaringer fra hvordan det er å gå over til og kjøre etter Radical Focus som metodikk - og noen vurdering er rundt hvor lurt det er å gjøre det mens man holder på med et stort program (hint: migrering fra Altinn 2 til Altinn 3).
+  - time: '14:50'
+    event: Pause
+  - time: 15:00–15:30
+    duration: 30 min
+    talks:
+    - org: Politiet
+      title: Oppdragshåndtering på taktisk nivå
+      speaker: Richard Borge
+      description: |-
+        Presentasjon av patruljens nye arbeidsflate for oppdragshåndtering. Politipatruljen har en veldig variert og til tider hektisk hverdag, og særlig i stressende situasjoner er det viktig med systemer som gir riktig informasjon til riktig tid og samtidig avlaster et allerede overbelastet samband. Hvordan har vi håndtert at patruljen får oppdatert situasjonsforståelse i sanntid på vei til oppdrag? Hvordan ivaretar vi personvern og dataminimering i en asynkron arkitektur?
+  - time: '15:30'
+    event: Pause
+  - time: 15:50–16:00
+    duration: 10 min
+    talks:
+    - org: Bekk
+      track: Lyntale
+      title: Teamet ditt lager verdiløs funksjonalitet!
+      speaker: Gunn-Elin Åsgren, Politiets IT-enhet og Lars Andreas Tveiten van Woensel Kooy
+      description: |-
+        Altfor mange team i offentlig sektor vet nøyaktig hva de har levert, men langt færre kan svare tydelig på hvilken verdi det faktisk skaper for brukerne og samfunnet. Når vi spør om effekt, får vi ofte magefølelse i retur.
+        Lars Andreas Tveiten van Woensel Kooy fra Bekk og Gunn-Elin Åsgren fra Politiets IT-enhet deler erfaringer fra team som har gått fra løsningsfokus til verdifokus – og gir deg konkrete grep for å bevege deg fra antakelser og magefølelse til målbare resultater.
+  - time: 16:00–16:10
+    duration: 10 min
+    talks:
+    - org: Politiet
+      track: Lyntale
+      title: Endringer i team
+      speaker: er det så farlig, da? - Lotte Johansen
+      description: |-
+        Et ærlig og humoristisk foredrag om livet i team – og alt som skjer når ting endrer seg. Vi snakker om Kubler-Ross, storming-fasen og hvorfor litt friksjon faktisk er et godt tegn. For det er i stormen vi finner kraften til å skape noe nytt.
+  - time: 16:10–16:20
+    duration: 10 min
+    talks:
+    - org: Digdir
+      track: Lyntale
+      title: 'Dialogporten: frå meldinger til dialoger'
+      speaker: Livar Bergheim
+      description: |-
+        Dialogporten er løysinga som held oversikt over dialogane du får opp i din nye innboks i Altinn. Vi ser på korleis dette fungerer og heng saman med resten av Altinn og tenesteplattformar utanom.
+  - time: '16:20'
+    event: Pause - se andre rom for flere foredrag
+- name: Rom 4, Mesanin
+  subtitle: Open Space & Workshop
+  id: rom4
+  schedule:
+  - time: 09:00–09:10
+    duration: 10 min
+    talks:
+    - org: Offentlig Fagdag
+      title: Velkomsttale i Meet-salen
+      speaker: Arrangørene av Offentlig Fagdag
+      description: Arrangørene ønsker velkommen til fagdagen og gir en kort introduksjon til dagens program.
+  - time: 09:10
+    event: Pause
+  - time: 09:20–11:50
+    duration: 2t 30 min
+    talks:
+    - org: NAV
+      track: Workshop
+      title: Leesah Game
+      speaker: Kyrre Havik
+      description: "Leesah Game er et kurs vi har lang erfaring med å holde som vi har holdt flere ganger tidligere på universiteter og høyskoler i Norge siden 2021, på JavaZone i 2024 og på Booster Conference, NDC Oslo og Cloud Native Bergen i 2025. Spillet utvikles av flere utviklere fra Nav som jobber sammen på fagsamlinger annenhver uke, slik at kurset blir kontinuerlig utviklet. Kurset er en god øvelse i blant annet parprogrammering, løsing av oppgaver og hendelsesdrevet programmering. \n\nI Nav utvikler vi moderne systemer i hendelsesdrevet mikrotjenestearkitektur som skal løse fremtidens arbeids- og velferdsbehov. Nå vil vi lære dere mer om hvordan vi bygger applikasjoner og hvordan hendelsesdrevne systemer kan brukes til å løse komplekse utfordringer.\n\nVi kommer til å presentere viktige prinsipper bak hendelsesdrevne systemer før vi kjører i gang med et “gamified” opplegg hvor man koder sammen to og to. Gjennom kurset skal man utvikle en applikasjon som kobles mot Kafka for å motta utfordringer deltagerenes applikasjon må håndtere. Dette blir en morsom workshop med litt utfordring og mye moro!\n\nVi ønsker å holde Leesah Game på fagdagen for teknologi i offentlig sektor fordi vi ønsker å spre kunnskapen om hendelsesdrevet utvikling."
+  - time: '11:50'
+    event: Lunsj
+  - time: 13:00–17:00
+    duration: 4t
+    talks:
+    - title: Open Space
+      description: Foreslå og stem på temaer! <a class="ds-link" href="/openspace">Gå til Open Space</a>
+commonAfter:
+- time: '17:00'
+  event: Avslutning
+- time: '17:20'
+  event: Felles avreise til Brygg
+- time: '17:30'
+  event: Sosialt på <a class="ds-link" href="https://brygg.no/">Brygg</a>

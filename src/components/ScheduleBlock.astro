@@ -1,0 +1,37 @@
+---
+import TalkCard from './TalkCard.astro';
+
+interface Talk {
+  org?: string;
+  title: string;
+  speaker?: string;
+  description?: string;
+  track?: string;
+}
+
+interface Props {
+  time: string;
+  duration?: string;
+  event?: string;
+  talks?: Talk[];
+  link?: string;
+}
+
+const { time, duration, event, talks, link } = Astro.props;
+---
+
+<div class="schedule-block">
+  <span class="schedule-time">
+    {time}
+    {duration && <small class="schedule-duration">{duration}</small>}
+  </span>
+  {event ? (
+    <span class="schedule-event">
+      {link ? <a class="ds-link" href={link}>{event}</a> : <Fragment set:html={event} />}
+    </span>
+  ) : (
+    <div class="schedule-talks">
+      {talks?.map(talk => <TalkCard {...talk} />)}
+    </div>
+  )}
+</div>

@@ -1,0 +1,26 @@
+---
+interface Props {
+  activeNav?: 'program' | 'openspace' | 'about';
+}
+
+const { activeNav } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<header class="fixed-width">
+  <div class="off-banner" data-color-scheme="light">
+    <a href={base} class="off-logo" aria-label="OFF">
+      <svg class="off-logo-svg" viewBox="0 0 108 42" xmlns="http://www.w3.org/2000/svg">
+        <text class="off-logo-stroke" x="54" y="32" text-anchor="middle">[OFF]</text>
+        <text class="off-logo-fill" x="54" y="32" text-anchor="middle">[OFF]</text>
+      </svg>
+    </a>
+    <span class="off-title">Offentlig fagdag</span>
+  </div>
+  <button class="nav-toggle" aria-label="Meny" aria-expanded="false">&#9776;</button>
+  <nav>
+    <a class="ds-button off-button" data-variant="secondary" href={`${base}program`}>Program</a>
+    <a class="ds-button off-button" data-variant="secondary" href={`${base}openspace`}>Open Space</a>
+    <a class="ds-button off-button" data-variant="secondary" href={`${base}about`}>Om fagdagen</a>
+  </nav>
+</header>

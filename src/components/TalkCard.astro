@@ -1,0 +1,19 @@
+---
+interface Props {
+  org?: string;
+  title: string;
+  speaker?: string;
+  description?: string;
+  track?: string;
+}
+
+const { org, title, speaker, description, track } = Astro.props;
+---
+
+<div class="schedule-talk">
+  {org && <span class="schedule-org">{org}</span>}
+  {track && <span class="schedule-track">{track}</span>}
+  <h3 class="ds-heading" data-size="sm">{title}</h3>
+  {speaker && <span class="ds-paragraph schedule-speaker" data-size="sm">{speaker}</span>}
+  {description && <p class="ds-paragraph" data-size="sm" set:html={description} />}
+</div>

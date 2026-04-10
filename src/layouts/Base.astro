@@ -1,0 +1,58 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/style.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  activeNav?: 'program' | 'openspace' | 'about';
+  bodyClass?: string;
+  bodyColorScheme?: string;
+  bodyColor?: string;
+}
+
+const {
+  title,
+  description,
+  ogTitle,
+  ogDescription,
+  ogImage = '/offentlig-fagdag/img/sharing.jpg',
+  activeNav,
+  bodyClass,
+  bodyColorScheme = 'light',
+  bodyColor = 'accent',
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {description && <meta name="description" content={description} />}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/offentlig-fagdag/theme/off.css">
+  <link rel="stylesheet" href="https://unpkg.com/@digdir/designsystemet-css@1.11.0/dist/src/index.css"
+    integrity="sha384-iQVX/eRD/62k5h5Q6ZYkiN2gavfLDZJUu5EudKV0DcTIKhkXbfWUgbas+JkoxIAg" crossorigin="anonymous">
+  <script is:inline src="/offentlig-fagdag/svg-components.js" defer></script>
+  <script is:inline src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js" defer></script>
+  <title>{title}</title>
+  {ogTitle && <meta property="og:title" content={ogTitle} />}
+  {ogDescription && <meta property="og:description" content={ogDescription} />}
+  {ogImage && <meta property="og:image" content={ogImage} />}
+</head>
+<body data-color-scheme={bodyColorScheme} data-color={bodyColor} class={bodyClass}>
+  <Header activeNav={activeNav} />
+  <slot />
+  <Footer />
+  <slot name="scripts" />
+</body>
+</html>

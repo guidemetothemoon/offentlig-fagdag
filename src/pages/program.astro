@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+import ScheduleBlock from '../components/ScheduleBlock.astro';
+import { parse } from 'yaml';
+import programYaml from '../data/program.yaml?raw';
+
+const program = parse(programYaml);
+---
+
+<Base
+  title="Program – Offentlig fagdag 2026"
+  description="Program for Offentlig fagdag 2026, 23. april på Meet Ullevål"
+  ogTitle="Program – Offentlig fagdag 2026"
+  ogDescription="Konferansen for teknologer i offentlig sektor"
+  activeNav="program"
+>
+  <main class="program-page">
+    <div class="fixed-width hero">
+      <icon-manserpaakart></icon-manserpaakart>
+      <div class="hero-text">
+        <h1 class="ds-heading" data-size="xl">Program</h1>
+        <h2 class="ds-heading" data-size="md">23. april 2026 på <a class="ds-link" href="https://meet-ullevaal.no">Meet Ullevål</a></h2>
+      </div>
+    </div>
+    <div class="bleed">
+      <div>
+        <div class="schedule">
+          {program.commonBefore.map((item: any) => (
+            <ScheduleBlock {...item} />
+          ))}
+        </div>
+      </div>
+
+      <div class="ds-tabs program-tabs">
+        <div role="tablist" class="program-tablist">
+          {program.rooms.map((room: any, i: number) => (
+            <span role="tab" aria-selected={i === 0 ? 'true' : 'false'} data-tab={room.id}>
+              {room.name}<br /><small>- {room.subtitle}</small>
+            </span>
+          ))}
+        </div>
+        {program.rooms.map((room: any, i: number) => (
+          <div role="tabpanel" data-panel={room.id} hidden={i !== 0 ? true : undefined}>
+            {room.schedule.map((block: any, j: number) => (
+              <div class={j % 2 === 1 ? 'bg-tinted' : undefined}>
+                <div class="schedule">
+                  <ScheduleBlock {...block} />
+                </div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+
+      <div>
+        <div class="schedule">
+          {program.commonAfter.map((item: any) => (
+            <ScheduleBlock {...item} />
+          ))}
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script is:inline src="/offentlig-fagdag/animations.js" defer slot="scripts"></script>
+</Base>

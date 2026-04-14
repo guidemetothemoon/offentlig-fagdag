@@ -361,7 +361,7 @@ rooms:
     talks:
     - org: Skatteetaten
       title: Tenor testdatasøk
-      speaker: Margrethe Bedregal og Linda Granstad
+      speaker: Linda Granstad
       description: "Tenor testdatasøk er et arbeidsverktøy for alle som driver systemutvikling og som trenger testdata. Løsningen gir deg enkel tilgang til syntetiske testdata fra Test-Norge, med testdata fra flere ulike kilder. Tenor ble som idé født i det som den gang het Tverretatlig samarbeid (nå Test-Norge samarbeidet). Tanken var å gjøre det enklere å utveksle syntetiske testdata på tvers i det offentlige. Allerede som ettåring vant løsningen en pris fra Datatilsynet for innebygd personvern. \n\nVi gir deg en innføring i hva Tenor testdatasøk er, hva tanken bak har vært, hva du kan bruke den til, og ikke minst får du vite hvordan et samarbeid i det offentlige kan være en solskinnshistorie som gir fantastiske resultater! \n\nhttps://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2022/pris-til-test-norge-og-tenor-testdatasok/\n\nhttps://www.skatteetaten.no/testdata/"
   - time: '13:30'
     event: Pause

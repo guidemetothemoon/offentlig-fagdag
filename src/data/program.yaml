@@ -283,7 +283,7 @@ rooms:
       title: 'Magic: The Gathering er turingkomplett'
       speaker: Andreas Nordahl
       description: |-
-        Jeg forklarer (1) hva MTG er, (2) hva det vil si å være turingkomplett, og til slutt (3) hvordan MTG kan sies å være turingkomplett. Del tre tar definitivt lengst tid. Jeg har holdt foredraget tre ganger før, og det blir alltid god stemning. Her er slidene jeg brukte sist: https://docs.google.com/presentation/d/1gsfG_EiSK4WJF106i_xzP9URoW1Oq41OO0sevzvHTx4/edit?usp=sharing
+        Magic er kjent for å være et litt over gjennomsnittet komplisert spill, men visste du at spillet kan modellere en generell datamaskin? I dette foredraget besvarer jeg tre grunnleggende spørsmål som du ikke visste du hadde: (1) Hva er MTG? (2) Hva vil det si å være turingkomplett? (3) Hvordan kan MTG simulere en vilkårlig turingmaskin?
 - name: Rom 3, M5
   subtitle: Metode, Produkt & Data
   id: rom3
@@ -361,7 +361,7 @@ rooms:
     talks:
     - org: Skatteetaten
       title: Tenor testdatasøk
-      speaker: Margrethe Bedregal og Linda Granstad
+      speaker: Linda Granstad
       description: "Tenor testdatasøk er et arbeidsverktøy for alle som driver systemutvikling og som trenger testdata. Løsningen gir deg enkel tilgang til syntetiske testdata fra Test-Norge, med testdata fra flere ulike kilder. Tenor ble som idé født i det som den gang het Tverretatlig samarbeid (nå Test-Norge samarbeidet). Tanken var å gjøre det enklere å utveksle syntetiske testdata på tvers i det offentlige. Allerede som ettåring vant løsningen en pris fra Datatilsynet for innebygd personvern. \n\nVi gir deg en innføring i hva Tenor testdatasøk er, hva tanken bak har vært, hva du kan bruke den til, og ikke minst får du vite hvordan et samarbeid i det offentlige kan være en solskinnshistorie som gir fantastiske resultater! \n\nhttps://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2022/pris-til-test-norge-og-tenor-testdatasok/\n\nhttps://www.skatteetaten.no/testdata/"
   - time: '13:30'
     event: Pause

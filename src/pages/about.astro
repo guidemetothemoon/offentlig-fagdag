@@ -35,6 +35,7 @@ import Base from '../layouts/Base.astro';
         I fjor ble Oslo Event Hub fylt opp med 300 teknologer til urpremieren av "Offentlig Fagdag". I år har vi sikret
         oss inntil 500 plasser når andre utgave av arrangementet går av stabelen 23. april på Meet Ullevål.
       </p>
+      <img src="/img/meet-lokasjon.png" alt="Meet Ullevål lokasjon" class="paragraph-image" />
       <h2 class="ds-heading">Hvem står bak?</h2>
       <p>
         Bak arrangementet står frivillige ildsjeler fra Nav, Politiet, Meteorologisk institutt, Skatteetaten, Oslo
@@ -56,6 +57,22 @@ import Base from '../layouts/Base.astro';
       </p>
     </div>
   </main>
+
+  <div id="imageModal" class="image-modal" onclick="this.classList.remove('open')">
+    <img id="modalImage" src="" alt="" onclick="event.stopPropagation()" />
+  </div>
+
+  <script is:inline>
+    document.querySelectorAll('.paragraph-image').forEach(img => {
+      img.onclick = () => {
+        document.getElementById('modalImage').src = img.src;
+        document.getElementById('imageModal').classList.add('open');
+      };
+    });
+    document.onkeydown = (e) => {
+      if (e.key === 'Escape') document.getElementById('imageModal').classList.remove('open');
+    };
+  </script>
 
   <script is:inline src="/animations.js" defer slot="scripts"></script>
 </Base>

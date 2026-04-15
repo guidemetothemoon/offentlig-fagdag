@@ -312,9 +312,9 @@ rooms:
   - time: 10:00–10:30
     duration: 30 min
     talks:
-    - org: Digdir
+    - org: Digdir,Brønnøysundregistrene
       title: Fra applikasjonssentrisk til datasentrisk tjenesteutvikling – revolusjon eller evolusjon?
-      speaker: Erik Hagen
+      speaker: Erik Hagen og Audun Vindenes Egge
       description: "Offentlig sektor har i flere tiår anskaffet applikasjoner og fagsystemer på leverandørenes premisser. Informasjonsmodeller og data har fulgt systemene – ikke omvendt. Resultatet er et fragmentert systemlandskap med innelåste data, begrenset gjenbruk, kostnadskrevende integrasjon og manglende evne til å skape sammenhengende tjenester på tvers. \n \nProsjektet Sammenhengende tjenester for barn og unge (SAMT-BU) tar utgangspunkt i at dette ikke lenger er bærekraftig. Ambisjonen er å drive fram et nødvendig systemskifte mot datasentrisk tjenesteutvikling, med pilotering innenfor barn og unge. Felles informasjonsmodeller og standardiserte grensesnitt etableres som grunnmur for samhandling og sammenhengende tjenester med brukeren i sentrum. \n \nEt slikt skifte forutsetter endringer i hvordan vi kravstiller, bestiller og utvikler IT-løsninger. Dette er et komplekst og langsiktig arbeid som krever bred teknologisk og arkitekturfaglig medvirkning. SAMT-BU-prosjektet er i oppstart. Vi har ikke alle svarene, og må arbeide smidig og lærende. I foredraget forteller vi hvor vi er - og hvordan vi ser for oss at vi kan ta det videre i fellesskap."
   - time: '10:30'
     event: Pause

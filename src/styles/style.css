@@ -754,3 +754,37 @@ header .off-logo {
 		width: 4em;
 	}
 }
+
+.paragraph-image {
+	max-height: none !important;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	display: block;
+	margin: 1.5rem auto;
+	cursor: pointer;
+	box-shadow: none !important;
+}
+
+/* Image modal */
+.image-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+}
+
+.image-modal.open {
+	display: flex;
+}
+
+.image-modal img {
+	max-width: 90vw;
+	max-height: 90vh;
+}

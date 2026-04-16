@@ -370,21 +370,20 @@ rooms:
     talks:
     - org: Oslo kommune
       title: Tverrfaglig innsikt i produktutvikling fra start til slutt
-      speaker: Stian Carstens Bendiksen
+      speaker: Stian Carstens Bendiksen og Ingvild Sundby
       description: |-
-        Fra oppvekstområdet i Digitaliseringsetaten deler vi hvordan vi jobber med tverrfaglig innsiktsarbeid når problemstillingen går på tvers av tjenester, og mange har en mening om både årsak og løsning. Foredraget tar deltakerne med inn i et konkret innsiktsløp fra oppvekstdomenet i Oslo kommune. Målet er ikke “mer kunnskap”, men en tydelig avgrensing: Hvor kan digitale løsninger raskt gi mer verdi for ansatte som har behov for å dele informasjon om sårbare barn og unge i de skolenære tjenestene? (For eksempel skolehelsetjenesten og PPT)
-
-        Vi viser hvordan vi jobber tverrfaglig helt fra start for å unngå både analysefella og byggefella. Det betyr at vi kombinerer:
-
-        ... Kvantitativ innsikt for å forstå målgruppe og omfang
-
-        ... Kvalitativ innsikt for å finne ut hvor samhandlingsutfordringene og brukerbehovene faktisk ligger
-
-        ... Rammeinnsikt (juridisk handlingsrom i dette caset) for å vite hva vi må forholde oss til eller hva som må endres for å skape verdi
-
-        Formålet er å bygge et forretningscase som både gir høy verdi til ansatte og innbyggere, og som faktisk lar seg gjennomføre.
-
+        Fra oppvekstområdet i Digitaliseringsetaten deler vi hvordan vi jobber med tverrfaglig innsiktsarbeid når problemstillingen går på tvers av tjenester,
+        og mange har en mening om både årsak og løsning. Foredraget tar deltakerne med inn i et konkret innsiktsløp fra oppvekstdomenet i Oslo kommune.
+        
+        Målet er ikke “mer kunnskap”, men en tydelig avgrensing: Hvor kan digitale løsninger raskt gi mer verdi for ansatte som har behov for å dele informasjon 
+        om sårbare barn og unge i de skolenære tjenestene? 
+        
+        Vi viser hvordan vi jobber tverrfaglig helt fra start for å unngå både analysefella og byggefella.
+        
+        Det betyr at vi kombinerer brukerinnsikt (kvantitativ og kvalitativ innsikt) og rammeinnsikt (hva vi må forholde oss til eller endre for å skape verdi).
+        
         Foredraget passer for alle som jobber med produktutvikling, enten det er teknologer, produktledere, tjenestedesignere, tek-jurister eller andre interesserte.
+
   - time: '14:10'
     event: Pause
   - time: 14:20–14:50

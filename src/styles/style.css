@@ -440,6 +440,63 @@ header .off-logo {
 	white-space: nowrap;
 }
 
+/* Favourite talk button + filter */
+.js-only {
+	display: none;
+}
+
+.favourite-btn {
+	position: absolute;
+	top: var(--ds-size-2);
+	left: var(--ds-size-2);
+	width: 2em;
+	height: 2em;
+	padding: 0.25em;
+	border: var(--ds-border-width-default) solid transparent;
+	background: transparent;
+	border-radius: var(--ds-border-radius-default);
+	color: var(--ds-color-neutral-text-subtle);
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: color 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.favourite-btn:hover {
+	color: var(--ds-color-accent-base-default);
+	background: var(--ds-color-accent-surface-hover);
+}
+
+.favourite-btn:focus-visible {
+	outline: var(--ds-border-width-focus, 3px) solid var(--ds-color-focus-default, currentColor);
+	outline-offset: 2px;
+}
+
+.favourite-icon {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.favourite-btn[aria-pressed="true"] {
+	color: var(--ds-color-accent-base-default);
+}
+
+.favourite-btn[aria-pressed="true"] .favourite-icon path {
+	fill: currentColor;
+	stroke: currentColor;
+}
+
+/* "Mine favoritter" tab — hide non-favourited cards and any time-slot that ends up empty */
+[data-panel="favourites"] .schedule-talk:not([data-favourited]) {
+	display: none;
+}
+
+[data-panel="favourites"] .schedule-block:has(.schedule-talks:not(:has(.schedule-talk[data-favourited]))) {
+	display: none;
+}
+
 .schedule-track {
 	display: inline-block;
 	font-size: var(--ds-font-size-0);

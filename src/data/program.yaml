@@ -9,7 +9,8 @@ rooms:
   - time: 09:00–09:10
     duration: 10 min
     talks:
-    - org: Offentlig Fagdag
+    - id: velkomst-hovedrommet
+      org: Offentlig Fagdag
       title: Velkomsttale
       speaker: Arrangørene av Offentlig Fagdag
       description: Arrangørene ønsker velkommen til fagdagen og gir en kort introduksjon til dagens program.
@@ -18,7 +19,8 @@ rooms:
   - time: 09:20–09:50
     duration: 30 min
     talks:
-    - org: NAV
+    - id: nav-nix-rust
+      org: NAV
       title: Hvordan Nix & Rust forenkler (F)OSS adopsjon!
       speaker: Christian Chavez
       description: |-
@@ -41,7 +43,8 @@ rooms:
   - time: 10:00–10:30
     duration: 30 min
     talks:
-    - org: Digdir
+    - id: digdir-designsystem-css
+      org: Digdir
       title: Designsystem i ren CSS – er det mulig?? Og, hvorfor er det fett for meg?
       speaker: Eirik Backer og Tobias Barsnes
       description: |-
@@ -51,7 +54,8 @@ rooms:
   - time: 10:40–11:10
     duration: 30 min
     talks:
-    - org: Politiet
+    - id: politiet-ux-ai
+      org: Politiet
       title: Koding og brukeropplevelse i AI-eraen
       speaker: Kjetil Hårtveit
       description: |-
@@ -63,7 +67,8 @@ rooms:
   - time: 11:20–11:50
     duration: 30 min
     talks:
-    - org: Enova
+    - id: enova-designsystem-team-of-one
+      org: Enova
       title: Designsystem-team of one!
       speaker: Lene Ludvigsen
       description: |-
@@ -73,7 +78,8 @@ rooms:
   - time: 13:00–13:30
     duration: 30 min
     talks:
-    - org: NRK
+    - id: nrk-legacy-kode
+      org: NRK
       title: Når koden ikke funker for deg
       speaker: Helén Persson
       description: "Legacy kode? Nei takk, det vil jeg ikke jobbe med. \n\nLegacy kode oppstår sjelden fordi vi er dårlige utviklere. Den oppstår fordi vi leverer, og systemet vokser og utvikler seg. Små MVP'er blir produksjonssystemer. Midlertidige løsninger blir permanente. Og plutselig sitter vi med kode ingen tør eller vil røre.\n\nSå hva gjør man når koden man sitter med ikke lengre fungerer for teamet? \n\nVi moderniserer et sentralt back-office system som leverer data til NRK Radio appen. Systemet er ikke synlig for brukerne, men konsekvensene merkes umiddelbart hvis det feiler.\n\nI dette foredraget deler jeg hvordan vi vurderte full rewrite vs. videreutvikling, hvilke kriterier som faktisk avgjorde valget, og hvordan vi moderniserer uten en risikabel big bang-release."
@@ -82,7 +88,8 @@ rooms:
   - time: 13:40–14:10
     duration: 30 min
     talks:
-    - org: NAV
+    - id: nav-logger-direktor
+      org: NAV
       title: Hvordan logger kan felle en Nav-direktør
       speaker: Trond Arve Wasskog og Audun Fauchald Strand
       description: |-
@@ -92,7 +99,8 @@ rooms:
   - time: 14:20–14:50
     duration: 30 min
     talks:
-    - org: Oslo kommune
+    - id: oslo-infrastruktur-ux
+      org: Oslo kommune
       title: Infrastruktur med UX på laget
       speaker: Håvard Eide
       description: |-
@@ -111,7 +119,8 @@ rooms:
   - time: 15:00–15:30
     duration: 30 min
     talks:
-    - org: JPro/Ruter
+    - id: ruter-react
+      org: JPro/Ruter
       title: Arkitekturen som gjorde React gøy igjen hos Tet/Ruter
       speaker: Jan Greger Hemb
       description: |-
@@ -121,7 +130,8 @@ rooms:
   - time: 15:50–16:20
     duration: 30 min
     talks:
-    - org: Skatteetaten
+    - id: skatteetaten-microsoft-foundry
+      org: Skatteetaten
       title: Når Microsoft flytter veggene i huset du nettopp bygde
       speaker: Tor Ivar Asbølmo og Geir Tore Johansen
       description: |-
@@ -135,7 +145,8 @@ rooms:
   - time: 16:30–17:00
     duration: 30 min
     talks:
-    - org: SSB
+    - id: ssb-nais
+      org: SSB
       title: Det er Nais å være utvikler i SSB
       speaker: John Kasper Svergja
       description: |-
@@ -147,7 +158,8 @@ rooms:
   - time: 09:00–09:10
     duration: 10 min
     talks:
-    - org: Offentlig Fagdag
+    - id: velkomst-rom2
+      org: Offentlig Fagdag
       title: Velkomsttale i Meet-salen
       speaker: Arrangørene av Offentlig Fagdag
       description: Arrangørene ønsker velkommen til fagdagen og gir en kort introduksjon til dagens program.
@@ -156,7 +168,8 @@ rooms:
   - time: 09:20–09:50
     duration: 30 min
     talks:
-    - org: Skatteetaten
+    - id: skatteetaten-gjenoppretting
+      org: Skatteetaten
       title: Gjenoppretting av data etter katastrofale hendelser
       speaker: Leila Langø og Ole Dag Svebak
       description: |-
@@ -166,7 +179,8 @@ rooms:
   - time: 10:00–10:30
     duration: 30 min
     talks:
-    - org: NRK
+    - id: nrk-leveransekjedesikkerhet
+      org: NRK
       title: Leveransekjedesikkerhet for frontendere
       speaker: Knut Haugen
       description: |-
@@ -176,7 +190,8 @@ rooms:
   - time: 10:40–11:10
     duration: 30 min
     talks:
-    - org: Digdir
+    - id: digdir-eidas2
+      org: Digdir
       title: eIDAS2 og vegen mot eit europeisk økosystem for digitale identitetslommebøker
       speaker: Aamund Bremer
       description: |-
@@ -192,7 +207,8 @@ rooms:
   - time: 11:20–11:50
     duration: 30 min
     talks:
-    - org: Norsk helsenett
+    - id: helsenett-datasenter
+      org: Norsk helsenett
       title: La oss bygge et datasenter
       speaker: Håvard Elnan
       description: |-
@@ -202,7 +218,8 @@ rooms:
   - time: 13:00–13:30
     duration: 30 min
     talks:
-    - org: Oslo kommune
+    - id: oslo-trusselmodellering
+      org: Oslo kommune
       title: Trusselmodellering
       speaker: Report from the trenches - Rune Schumann, Digitaliseringsetaten
       description: |-
@@ -215,7 +232,8 @@ rooms:
   - time: 13:40–14:10
     duration: 30 min
     talks:
-    - org: FFI
+    - id: ffi-kvantesikker
+      org: FFI
       title: Så enkelt er det å bli kvantesikker
       speaker: Martin Strand
       description: |-
@@ -227,7 +245,8 @@ rooms:
   - time: 14:20–14:50
     duration: 30 min
     talks:
-    - org: MET
+    - id: met-gitlab-kubevirt
+      org: MET
       title: Gitlab-runner med KubeVirt
       speaker: Christian Skarby
       description: Praktisk demo med oppsett av kubevirt og gitlab-runner for å kjøre CI/CD i bruk-og-kast-VMer.
@@ -236,7 +255,8 @@ rooms:
   - time: 15:00–15:30
     duration: 30 min
     talks:
-    - org: Digdir
+    - id: digdir-apt-defence
+      org: Digdir
       title: Understanding APT defence thru Experts Eyes
       speaker: A critical exploration of Perceived Needs and Gaps - Raymond Andre Hagen
       description: |-
@@ -246,7 +266,8 @@ rooms:
   - time: 15:50–16:00
     duration: 10 min
     talks:
-    - org: Oslo kommune
+    - id: oslo-klarsprak-sikkerhet
+      org: Oslo kommune
       track: Lyntale
       title: Sikkerhet startar med klarspråk
       speaker: Håvard Eide
@@ -257,7 +278,8 @@ rooms:
   - time: 16:00–16:10
     duration: 10 min
     talks:
-    - org: Politiet
+    - id: politiet-75tb
+      org: Politiet
       track: Lyntale
       title: Oops, sletta 75TB med prod-data. Hva nå?
       speaker: Christian Tryti
@@ -266,7 +288,8 @@ rooms:
   - time: 16:10–16:20
     duration: 10 min
     talks:
-    - org: NAV
+    - id: nav-appsec-tpt
+      org: NAV
       track: Lyntale
       title: AppSec i Nav med TPT
       speaker: Emil Albrektsson
@@ -279,7 +302,8 @@ rooms:
   - time: 16:30–17:00
     duration: 30 min
     talks:
-    - org: NAV
+    - id: nav-magic-turing
+      org: NAV
       title: 'Magic: The Gathering er turingkomplett'
       speaker: Andreas Nordahl
       description: |-
@@ -291,7 +315,8 @@ rooms:
   - time: 09:00–09:10
     duration: 10 min
     talks:
-    - org: Offentlig Fagdag
+    - id: velkomst-rom3
+      org: Offentlig Fagdag
       title: Velkomsttale i Meet-salen
       speaker: Arrangørene av Offentlig Fagdag
       description: Arrangørene ønsker velkommen til fagdagen og gir en kort introduksjon til dagens program.
@@ -300,7 +325,8 @@ rooms:
   - time: 09:20–09:50
     duration: 30 min
     talks:
-    - org: Politiet
+    - id: politiet-produktmodne-team
+      org: Politiet
       title: Produktmodne team bygges
       speaker: de oppstår ikke av seg selv - Gunn-Elin Åsgren og Ove Dalen
       description: |-
@@ -312,7 +338,8 @@ rooms:
   - time: 10:00–10:30
     duration: 30 min
     talks:
-    - org: Digdir,Brønnøysundregistrene
+    - id: digdir-datasentrisk
+      org: Digdir,Brønnøysundregistrene
       title: Fra applikasjonssentrisk til datasentrisk tjenesteutvikling – revolusjon eller evolusjon?
       speaker: Erik Hagen og Audun Vindenes Egge
       description: "Offentlig sektor har i flere tiår anskaffet applikasjoner og fagsystemer på leverandørenes premisser. Informasjonsmodeller og data har fulgt systemene – ikke omvendt. Resultatet er et fragmentert systemlandskap med innelåste data, begrenset gjenbruk, kostnadskrevende integrasjon og manglende evne til å skape sammenhengende tjenester på tvers. \n \nProsjektet Sammenhengende tjenester for barn og unge (SAMT-BU) tar utgangspunkt i at dette ikke lenger er bærekraftig. Ambisjonen er å drive fram et nødvendig systemskifte mot datasentrisk tjenesteutvikling, med pilotering innenfor barn og unge. Felles informasjonsmodeller og standardiserte grensesnitt etableres som grunnmur for samhandling og sammenhengende tjenester med brukeren i sentrum. \n \nEt slikt skifte forutsetter endringer i hvordan vi kravstiller, bestiller og utvikler IT-løsninger. Dette er et komplekst og langsiktig arbeid som krever bred teknologisk og arkitekturfaglig medvirkning. SAMT-BU-prosjektet er i oppstart. Vi har ikke alle svarene, og må arbeide smidig og lærende. I foredraget forteller vi hvor vi er - og hvordan vi ser for oss at vi kan ta det videre i fellesskap."
@@ -321,7 +348,8 @@ rooms:
   - time: 10:40–11:10
     duration: 30 min
     talks:
-    - org: SPK
+    - id: spk-start-up-stat-up
+      org: SPK
       title: Fra Start-Up til Stat-Up – innovasjon fra innsiden av staten
       speaker: Jørgen Ekvoll
       description: |-
@@ -345,7 +373,8 @@ rooms:
   - time: 11:20–11:50
     duration: 30 min
     talks:
-    - org: Politiet
+    - id: politiet-ingen-pauseknapp
+      org: Politiet
       title: Ingen pauseknapp i politiet. Slik erstattet vi en kritisk løsning uten å miste kontrollen
       speaker: Kim Olsen Vindsland
       description: |-
@@ -359,7 +388,8 @@ rooms:
   - time: 13:00–13:30
     duration: 30 min
     talks:
-    - org: Skatteetaten
+    - id: skatteetaten-tenor
+      org: Skatteetaten
       title: Tenor testdatasøk
       speaker: Linda Granstad
       description: "Tenor testdatasøk er et arbeidsverktøy for alle som driver systemutvikling og som trenger testdata. Løsningen gir deg enkel tilgang til syntetiske testdata fra Test-Norge, med testdata fra flere ulike kilder. Tenor ble som idé født i det som den gang het Tverretatlig samarbeid (nå Test-Norge samarbeidet). Tanken var å gjøre det enklere å utveksle syntetiske testdata på tvers i det offentlige. Allerede som ettåring vant løsningen en pris fra Datatilsynet for innebygd personvern. \n\nVi gir deg en innføring i hva Tenor testdatasøk er, hva tanken bak har vært, hva du kan bruke den til, og ikke minst får du vite hvordan et samarbeid i det offentlige kan være en solskinnshistorie som gir fantastiske resultater! \n\nhttps://www.datatilsynet.no/aktuelt/aktuelle-nyheter-2022/pris-til-test-norge-og-tenor-testdatasok/\n\nhttps://www.skatteetaten.no/testdata/"
@@ -368,20 +398,21 @@ rooms:
   - time: 13:40–14:10
     duration: 30 min
     talks:
-    - org: Oslo kommune
+    - id: oslo-tverrfaglig-innsikt
+      org: Oslo kommune
       title: Tverrfaglig innsikt i produktutvikling fra start til slutt
       speaker: Stian Carstens Bendiksen og Ingvild Sundby
       description: |-
         Fra oppvekstområdet i Digitaliseringsetaten deler vi hvordan vi jobber med tverrfaglig innsiktsarbeid når problemstillingen går på tvers av tjenester,
         og mange har en mening om både årsak og løsning. Foredraget tar deltakerne med inn i et konkret innsiktsløp fra oppvekstdomenet i Oslo kommune.
-        
-        Målet er ikke “mer kunnskap”, men en tydelig avgrensing: Hvor kan digitale løsninger raskt gi mer verdi for ansatte som har behov for å dele informasjon 
-        om sårbare barn og unge i de skolenære tjenestene? 
-        
+
+        Målet er ikke “mer kunnskap”, men en tydelig avgrensing: Hvor kan digitale løsninger raskt gi mer verdi for ansatte som har behov for å dele informasjon
+        om sårbare barn og unge i de skolenære tjenestene?
+
         Vi viser hvordan vi jobber tverrfaglig helt fra start for å unngå både analysefella og byggefella.
-        
+
         Det betyr at vi kombinerer brukerinnsikt (kvantitativ og kvalitativ innsikt) og rammeinnsikt (hva vi må forholde oss til eller endre for å skape verdi).
-        
+
         Foredraget passer for alle som jobber med produktutvikling, enten det er teknologer, produktledere, tjenestedesignere, tek-jurister eller andre interesserte.
 
   - time: '14:10'
@@ -389,7 +420,8 @@ rooms:
   - time: 14:20–14:50
     duration: 30 min
     talks:
-    - org: Digdir
+    - id: digdir-rip-scrum
+      org: Digdir
       title: R.I.P. Scrum
       speaker: Hello Radical Focus - Nina Kylstad og Ronny Birkeli
       description: |-
@@ -399,7 +431,8 @@ rooms:
   - time: 15:00–15:30
     duration: 30 min
     talks:
-    - org: Politiet
+    - id: politiet-oppdragshandtering
+      org: Politiet
       title: Oppdragshåndtering på taktisk nivå
       speaker: Richard Borge
       description: |-
@@ -409,7 +442,8 @@ rooms:
   - time: 15:50–16:00
     duration: 10 min
     talks:
-    - org: Bekk
+    - id: bekk-verdilos-funksjonalitet
+      org: Bekk
       track: Lyntale
       title: Teamet ditt lager verdiløs funksjonalitet!
       speaker: Gunn-Elin Åsgren, Politiets IT-enhet og Lars Andreas Tveiten van Woensel Kooy
@@ -419,7 +453,8 @@ rooms:
   - time: 16:00–16:10
     duration: 10 min
     talks:
-    - org: Politiet
+    - id: politiet-endringer-team
+      org: Politiet
       track: Lyntale
       title: Endringer i team
       speaker: er det så farlig, da? - Lotte Johansen
@@ -428,7 +463,8 @@ rooms:
   - time: 16:10–16:20
     duration: 10 min
     talks:
-    - org: Digdir
+    - id: digdir-dialogporten
+      org: Digdir
       track: Lyntale
       title: 'Dialogporten: frå meldinger til dialoger'
       speaker: Livar Bergheim
@@ -443,7 +479,8 @@ rooms:
   - time: 09:00–09:10
     duration: 10 min
     talks:
-    - org: Offentlig Fagdag
+    - id: velkomst-rom4
+      org: Offentlig Fagdag
       title: Velkomsttale i Meet-salen
       speaker: Arrangørene av Offentlig Fagdag
       description: Arrangørene ønsker velkommen til fagdagen og gir en kort introduksjon til dagens program.
@@ -452,7 +489,8 @@ rooms:
   - time: 09:20–11:50
     duration: 2t 30 min
     talks:
-    - org: NAV
+    - id: nav-leesah-game
+      org: NAV
       track: Workshop
       title: Leesah Game
       speaker: Kyrre Havik
@@ -462,7 +500,8 @@ rooms:
   - time: 13:00–17:00
     duration: 4t
     talks:
-    - title: Open Space
+    - id: openspace
+      title: Open Space
       description: Foreslå og stem på temaer! <a class="ds-link" href="/openspace">Gå til Open Space</a>
 commonAfter:
 - time: '17:00'

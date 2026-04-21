@@ -102,7 +102,7 @@ rooms:
     - id: oslo-infrastruktur-ux
       org: Oslo kommune
       title: Infrastruktur med UX på laget
-      speaker: Håvard Eide
+      speaker: Håvard Eide og Mira Sjølie
       description: |-
         Kva skjer når ein UX-designer tek plass i plattformteamet og blir med å forme infrastrukturen?
 
@@ -111,9 +111,6 @@ rooms:
         Vi jobbar for å senke den kognitive lasten, så utviklarane kan fokusere tida si på produkt. Terraform-modulane våre skal ikkje berre vere riktige – dei skal vere forståelege. Dokumentasjonen skal ikkje berre forklare, men vise veg.
 
         Korleis kombinere kode og kommunikasjon, sikkerheit og smidighet, fridom og ansvar. Om å ta brukaroppleving på alvor – når brukaren er utviklar og verktøyet er Terraform.
-
-        ===
-        Dette er ei vidareføring av foredrag som vi hold på javazone 2025: https://2025.javazone.no/en/program/d92b3ab6-9501-4136-a818-0380760f9cdf
   - time: '14:50'
     event: Pause
   - time: 15:00–15:30
@@ -219,9 +216,9 @@ rooms:
     duration: 30 min
     talks:
     - id: oslo-trusselmodellering
-      org: Oslo kommune
-      title: Trusselmodellering
-      speaker: Report from the trenches - Rune Schumann, Digitaliseringsetaten
+      org: Oslo kommune, Digitaliseringsetaten
+      title: Trusselmodellering - Report from the trenches
+      speaker: Rune Schumann
       description: |-
         Trusselmodellering er en svært nyttig øvelse og gir god innsikt i tekniske sårbarheter i applikasjoner og verdikjeder. Jeg har lang erfaring som senior sikkerhetsrådgiver å gjennomføre trusselmodelleringer på godt og vondt.
         Trusselmodellering gjennomføres ofte på en måte som ikke øker selvtilliten til deltagerne. Noe av årsaken er at man blir snødd ned av kompleksitet og en grenseløs mengde gjøremål. Man mister selve rosinen i pølsa: avdekke de største sårbarhetene og til å kunne prioritere dem etter et kost-nytte prinsipp
@@ -257,8 +254,8 @@ rooms:
     talks:
     - id: digdir-apt-defence
       org: Digdir
-      title: Understanding APT defence thru Experts Eyes
-      speaker: A critical exploration of Perceived Needs and Gaps - Raymond Andre Hagen
+      title: Understanding APT defence thru Experts Eyes - A critical exploration of Perceived Needs and Gaps
+      speaker: Raymond Andre Hagen
       description: |-
         Gjennom forskning på forsvar mot avanserte trusselaktører har jeg publisert en del funn på gapet mellom hva som eksperter trur de har behov for , og hva som de burde fokusert på. Del av offentlig PHD arbeid ved NTNU , og mitt arbeid som fagdirektør i Cybersikkerhet ved Digitaliseringsdirektoratet.
   - time: '15:30'
@@ -327,12 +324,12 @@ rooms:
     talks:
     - id: politiet-produktmodne-team
       org: Politiet
-      title: Produktmodne team bygges
-      speaker: de oppstår ikke av seg selv - Gunn-Elin Åsgren og Ove Dalen
+      title: Produktmodne team bygges - de oppstår ikke av seg selv
+      speaker: Ove Dalen
       description: |-
         Fra ambisjon til praksis: En modningsreise for produktteam.
         De fleste team i offentlig sektor ønsker å jobbe mer produktorientert. Færre vet hva det faktisk krever i hverdagen. I dette foredraget viser vi hvordan vårt eget produkt Teamskolen og vårt egenutviklede verktøy "Teamsirkelen" hjelper team å forstå hvor de er, hva som holder dem igjen – og hvordan de kan ta neste steg i sin produktmodning. Dette gjør vi som ledd i en større strategi og å jobbe med å produktrette hele vår organisasjon, for å møte de store utfordringene Politiet står ovenfor. Vi må både få fart på teknologien vår, samtidig som alle vi som jobber der, må bli enda bedre til å lære sammen og omsette læring til verdi raskt.
-        I foredraget vil fag- og personalleder for design Ove Dalen og produktprinsipal Gunn-Elin Åsgren gi dere få innsyn et verktøy vi har utviklet, erfaringene så langt fra ca 50 team, fallgruver og hypoteser om veien videre for oss.
+        I foredraget vil fag- og personalleder for design Ove Dalen gi dere få innsyn et verktøy vi har utviklet, erfaringene så langt fra ca 50 team, fallgruver og hypoteser om veien videre for oss.
   - time: 09:50
     event: Pause
   - time: 10:00–10:30
@@ -422,8 +419,8 @@ rooms:
     talks:
     - id: digdir-rip-scrum
       org: Digdir
-      title: R.I.P. Scrum
-      speaker: Hello Radical Focus - Nina Kylstad og Ronny Birkeli
+      title: R.I.P. Scrum, Hello Radical Focus
+      speaker: Nina Kylstad og Ronny Birkeli
       description: |-
         Flere stjerner og planeter stod i samme bane, og etter 20 år med Scrum/Kanban og ca. 470 to ukers sprinter følte vi at det var på tide å gjøre noe med ting som funket sånn passe. Team Altinn Studio fra Digdir deler sine første erfaringer fra hvordan det er å gå over til og kjøre etter Radical Focus som metodikk - og noen vurdering er rundt hvor lurt det er å gjøre det mens man holder på med et stort program (hint: migrering fra Altinn 2 til Altinn 3).
   - time: '14:50'
@@ -446,18 +443,18 @@ rooms:
       org: Bekk
       track: Lyntale
       title: Teamet ditt lager verdiløs funksjonalitet!
-      speaker: Gunn-Elin Åsgren, Politiets IT-enhet og Lars Andreas Tveiten van Woensel Kooy
+      speaker: Lars Andreas Tveiten van Woensel Kooy
       description: |-
         Altfor mange team i offentlig sektor vet nøyaktig hva de har levert, men langt færre kan svare tydelig på hvilken verdi det faktisk skaper for brukerne og samfunnet. Når vi spør om effekt, får vi ofte magefølelse i retur.
-        Lars Andreas Tveiten van Woensel Kooy fra Bekk og Gunn-Elin Åsgren fra Politiets IT-enhet deler erfaringer fra team som har gått fra løsningsfokus til verdifokus – og gir deg konkrete grep for å bevege deg fra antakelser og magefølelse til målbare resultater.
+        Lars Andreas Tveiten van Woensel Kooy fra Bekk deler erfaringer fra team som har gått fra løsningsfokus til verdifokus – og gir deg konkrete grep for å bevege deg fra antakelser og magefølelse til målbare resultater.
   - time: 16:00–16:10
     duration: 10 min
     talks:
     - id: politiet-endringer-team
       org: Politiet
       track: Lyntale
-      title: Endringer i team
-      speaker: er det så farlig, da? - Lotte Johansen
+      title: Endringer i team - er det så farlig, da?
+      speaker: Lotte Johansen
       description: |-
         Et ærlig og humoristisk foredrag om livet i team – og alt som skjer når ting endrer seg. Vi snakker om Kubler-Ross, storming-fasen og hvorfor litt friksjon faktisk er et godt tegn. For det er i stormen vi finner kraften til å skape noe nytt.
   - time: 16:10–16:20
